@@ -13,7 +13,7 @@ To get started with the code samples in this repository, follow these steps:
 1. **Clone the Repository**: Use the following command to clone this repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/aws-morocco-code-samples.git
+   git clone https://github.com/your-username/aws-morocco-samples.git
    ```
 
 2. **Choose a Code Sample**: Browse the samples directorries to find code examples related to the specific AWS service or topic you are interested in.
