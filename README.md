@@ -30,4 +30,4 @@ To get started with the code samples in this repository, follow these steps:
 | [AWS multi-region VPC peering using Terraform](https://awsmorocco.com/aws-multi-region-vpc-peering-using-terraform-a0b8aabf084b) | [multi-region-vpc-peering](multi-region-vpc-peering/README.md)|
 | [Exploring Steampipe for Terrafom drift detection](https://awsmorocco.com/exploring-steampipe-for-terraform-drift-detection-4cc4536f6cb5) | [setting-steampipe-for-drift-detection](setting-steampipe-for-drift-detection/README.md)|
 
-For more AWS-related content and articles, visit [awsmorocco.com](https://awsmorocco.com).
+For more AWS-related content and articles, visit [awsmorocco.com](https://awsmorocco.com) and Join [AWS Morocco's Newsletter](https://medium.com/aws-morocco/newsletters/aws-morocco)
