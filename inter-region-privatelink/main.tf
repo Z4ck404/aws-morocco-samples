@@ -9,9 +9,15 @@ module "vpc_service_provider" {
   name   = "awsmorocco_service_provider_vpc"
   cidr   = "10.10.0.0/16"
 
-  azs                = ["us-east-1a"]
-  private_subnets    = ["10.10.1.0/24"]
+  azs             = ["us-east-1a"]
+  private_subnets = ["10.10.1.0/24"]
+  public_subnets  = ["10.10.2.0/24"]
+
   enable_nat_gateway = true
+  single_nat_gateway = true
+
+  enable_dns_hostnames = true
+  enable_dns_support   = true
 }
 
 module "vpc_service_provider_outpost" {
@@ -19,9 +25,15 @@ module "vpc_service_provider_outpost" {
   name   = "awsmorocco_service_provider_outpost"
   cidr   = "10.11.0.0/16"
 
-  azs                = ["eu-west-1a"]
-  private_subnets    = ["10.11.1.0/24"]
+  azs             = ["eu-west-1a"]
+  private_subnets = ["10.11.1.0/24"]
+  public_subnets  = ["10.11.2.0/24"]
+
   enable_nat_gateway = true
+  single_nat_gateway = true
+
+  enable_dns_hostnames = true
+  enable_dns_support   = true
 }
 
 module "vpc_service_consumer" {
@@ -33,6 +45,10 @@ module "vpc_service_consumer" {
   private_subnets    = ["10.12.1.0/24"]
   public_subnets     = ["10.12.2.0/24"]
   enable_nat_gateway = true
+  single_nat_gateway = true
+
+  enable_dns_hostnames = true
+  enable_dns_support   = true
 }
 
 #######################################################
@@ -61,18 +77,20 @@ resource "aws_vpc_endpoint_service" "this" {
 
 resource "aws_vpc_endpoint_service_allowed_principal" "this" {
   vpc_endpoint_service_id = aws_vpc_endpoint_service.this.id
-  principal_arn           = "${data.aws_caller_identity.current.arn}"
+  principal_arn           = data.aws_caller_identity.current.arn
 
   provider = aws.service_provider_outpost
 }
 
 resource "aws_vpc_endpoint" "this" {
   service_name      = aws_vpc_endpoint_service.this.service_name
-  subnet_ids        = [module.vpc_service_consumer.private_subnets]
+  subnet_ids        = module.vpc_service_consumer.private_subnets
   vpc_endpoint_type = "Interface"
   vpc_id            = module.vpc_service_consumer.vpc_id
 
   provider = aws.consumer
+
+  depends_on = [module.vpc_service_consumer]
 }
 
 #######################################################
