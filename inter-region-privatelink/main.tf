@@ -101,8 +101,6 @@ resource "aws_vpc_endpoint" "this" {
   vpc_id            = module.vpc_service_consumer.vpc_id
 
   provider = aws.consumer
-
-  depends_on = [module.vpc_service_consumer]
 }
 
 #######################################################
