@@ -18,6 +18,10 @@ module "vpc_service_provider" {
 
   enable_dns_hostnames = true
   enable_dns_support   = true
+
+  providers = {
+    aws = aws.service_provider
+  }
 }
 
 module "vpc_service_provider_outpost" {
@@ -34,6 +38,10 @@ module "vpc_service_provider_outpost" {
 
   enable_dns_hostnames = true
   enable_dns_support   = true
+
+  providers = {
+    aws = aws.service_provider_outpost
+  }
 }
 
 module "vpc_service_consumer" {
@@ -49,6 +57,10 @@ module "vpc_service_consumer" {
 
   enable_dns_hostnames = true
   enable_dns_support   = true
+
+  providers = {
+    aws = aws.consumer
+  }
 }
 
 #######################################################
