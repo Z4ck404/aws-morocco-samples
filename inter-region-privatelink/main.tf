@@ -29,7 +29,7 @@ module "vpc_service_provider_outpost" {
   name   = "awsmorocco_service_provider_outpost"
   cidr   = "10.11.0.0/16"
 
-  azs             = ["eu-west-1a"]
+  azs             = ["us-west-2a"]
   private_subnets = ["10.11.1.0/24"]
   public_subnets  = ["10.11.2.0/24"]
 
@@ -49,7 +49,7 @@ module "vpc_service_consumer" {
   name   = "awsmorocco_service_consumer"
   cidr   = "10.2.0.0/16"
 
-  azs                = ["eu-west-1a"]
+  azs                = ["us-west-2a"]
   private_subnets    = ["10.12.1.0/24"]
   public_subnets     = ["10.12.2.0/24"]
   enable_nat_gateway = true
