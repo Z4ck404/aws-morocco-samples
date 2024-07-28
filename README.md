@@ -30,5 +30,6 @@ To get started with the code samples in this repository, follow these steps:
 | [AWS multi-region VPC peering using Terraform](https://awsmorocco.com/aws-multi-region-vpc-peering-using-terraform-a0b8aabf084b) | [multi-region-vpc-peering](multi-region-vpc-peering/README.md)|
 | [Exploring Steampipe for Terrafom drift detection](https://awsmorocco.com/exploring-steampipe-for-terraform-drift-detection-4cc4536f6cb5) | [setting-steampipe-for-drift-detection](setting-steampipe-for-drift-detection/README.md)|
 | [Inter-Region AWS PrivateLink](https://awsmorocco.com/inter-region-aws-privatelink-337c5115fbb9) | [inter-region-privatelink](inter-region-privatelink/main.tf)|
+| [AWS IAM Roles For Kubernetes Service Accounts (IRSA)](https://awsmorocco.com/aws-iam-roles-for-kubernetes-service-accounts-irsa-cd355490cca6) | [aws-iam-roles-for-k8s-sa](aws-iam-roles-for-k8s-sa/materials/IRSA_Roles_Diagram.drawio)|
 
 For more AWS-related content and articles, visit [awsmorocco.com](https://awsmorocco.com) and Join [AWS Morocco's Newsletter](https://medium.com/aws-morocco/newsletters/aws-morocco)
