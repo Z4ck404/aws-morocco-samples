@@ -31,5 +31,6 @@ To get started with the code samples in this repository, follow these steps:
 | [Exploring Steampipe for Terrafom drift detection](https://awsmorocco.com/exploring-steampipe-for-terraform-drift-detection-4cc4536f6cb5) | [setting-steampipe-for-drift-detection](setting-steampipe-for-drift-detection/README.md)|
 | [Inter-Region AWS PrivateLink](https://awsmorocco.com/inter-region-aws-privatelink-337c5115fbb9) | [inter-region-privatelink](inter-region-privatelink/main.tf)|
 | [AWS IAM Roles For Kubernetes Service Accounts (IRSA)](https://awsmorocco.com/aws-iam-roles-for-kubernetes-service-accounts-irsa-cd355490cca6) | [aws-iam-roles-for-k8s-sa](aws-iam-roles-for-k8s-sa/materials/IRSA_Roles_Diagram.drawio)|
+| [Exposing Ports in Kubernetes: What You Should to Know](https://medium.com/aws-morocco/exposing-ports-in-kubernetes-what-you-should-to-know-cd1a80655f6c) | [kubernetes-ports-exposure](kubernetes-ports-exposure)|
 
 For more AWS-related content and articles, visit [awsmorocco.com](https://awsmorocco.com) and Join [AWS Morocco's Newsletter](https://medium.com/aws-morocco/newsletters/aws-morocco)
