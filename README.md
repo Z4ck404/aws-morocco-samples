@@ -32,6 +32,6 @@ To get started with the code samples in this repository, follow these steps:
 | [Inter-Region AWS PrivateLink](https://awsmorocco.com/inter-region-aws-privatelink-337c5115fbb9) | [inter-region-privatelink](inter-region-privatelink/main.tf)|
 | [AWS IAM Roles For Kubernetes Service Accounts (IRSA)](https://awsmorocco.com/aws-iam-roles-for-kubernetes-service-accounts-irsa-cd355490cca6) | [aws-iam-roles-for-k8s-sa](aws-iam-roles-for-k8s-sa/materials/IRSA_Roles_Diagram.drawio)|
 | [Exposing Ports in Kubernetes: What You Should to Know](https://medium.com/aws-morocco/exposing-ports-in-kubernetes-what-you-should-to-know-cd1a80655f6c) | [kubernetes-ports-exposure](kubernetes-ports-exposure)|
-| [Thanos Deep Dive: Addressing Prometheus Limitations at Scale]([https://medium.com/aws-morocco/exposing-ports-in-kubernetes-what-you-should-to-know-cd1a80655f6c](https://awsmorocco.com/thanos-deep-dive-addressing-prometheus-limitations-at-scale-84a6b02b01bc)) | [thanos-at-scale](thanos-at-scale)|
+| [Thanos Deep Dive: Addressing Prometheus Limitations at Scale](https://medium.com/aws-morocco/exposing-ports-in-kubernetes-what-you-should-to-know-cd1a80655f6c) | [thanos-at-scale](thanos-at-scale)|
 
 For more AWS-related content and articles, visit [awsmorocco.com](https://awsmorocco.com) and Join [AWS Morocco's Newsletter](https://medium.com/aws-morocco/newsletters/aws-morocco)
