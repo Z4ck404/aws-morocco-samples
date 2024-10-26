@@ -6,7 +6,7 @@ variable "aws_region" {
 
 variable "vpc_id" {
   type    = string
-  default = "vpc-0e2466eb18a9fc333"
+  #default = "vpc-0e2466eb18a9fc333"
 }
 
 ### Configure the AWS Provider
