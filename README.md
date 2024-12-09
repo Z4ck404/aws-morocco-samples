@@ -1,6 +1,6 @@
 # AWS Morocco Code Samples Repository
 
-Welcome to the AWS Morocco Code Samples Repository! This repository is a companion to the blog posts on [awsmorocco.com](https://awsmorocco.com), providing you with practical code examples and resources related to AWS cloud services.
+Welcome to the AWS Morocco Code Samples Repository! This repository is a companion to the blog posts on [awsmorocco.com](https://awsmorocco.com) and [Nubis Morocco tech blog](https://nubis.ma/blog/), providing you with practical code examples and resources related to AWS cloud services.
 
 ## Introduction
 
