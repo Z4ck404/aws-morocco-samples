@@ -23,6 +23,7 @@ resource "aws_secretsmanager_secret_version" "application_secret_version" {
   secret_string = jsonencode({
     db_username = "username"
     db_password = random_password.password.result
+    api_key     = data.aws_kms_secrets.application_secrets.plaintext["api_key"]
   })
 }
 
